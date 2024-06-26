@@ -11,9 +11,9 @@
   
   | Repo-links | Purpose |
   |:------|:--------------|
-  | [Zenodo](https://zenodo.org/records/10515991) | Coming soon |
+  | [Zenodo](https://zenodo.org/records/10515991) | On Zenodo, we provide JSON formatted dataset for all modalities and representative images in a zip file. |
   | [Github](https://github.com/idramalab/iDRAMA-rumble-2024) | The main repository of this dataset, where we provide code-snippets to get started with this dataset. |
-  | [Huggingface](https://hf.co/datasets/iDRAMALab/iDRAMA-rumble-2024) | On Huggingface, we provide a dataset that can be accessed through Huggingface APIs. |
+  | [Huggingface](https://hf.co/datasets/iDRAMALab/iDRAMA-rumble-2024) | On Huggingface, we provide a dataset that can be accessed through Huggingface APIs in a `parquet` format. |
 
 - **Rumble platform:** [Rumble](https://rumble.com)
 - **Link to paper:** [CySoc 2024](https://workshop-proceedings.icwsm.org/abstract.php?id=2024_07)
@@ -32,6 +32,8 @@ dataset = load_dataset("iDRAMALab/iDRAMA-rumble-2024")
 # Load dataset with specific config
 dataset = load_dataset("iDRAMALab/iDRAMA-rumble-2024", name="transcripts")
 ```
+
+> More code-snippets to load the different variant of datasets efficiently are available on [Github](https://github.com/idramalab/iDRAMA-rumble-2024) rpository.
 
 # Dataset Info
 
@@ -82,5 +84,10 @@ This dataset is available for free to use under terms of the non-commercial lice
 # Citation
 
 ```bibtex
-Coming soon
+@article{balci2024idrama,
+  title  = {iDRAMA-rumble-2024: A Dataset of Podcasts from Rumble Spanning 2020 to 2022},
+  author = {Balci, Utkucan and Patel, Jay and Balci, Berkan and Blackburn, Jeremy},
+  year   = {2024},
+  journal = {Workshop Proceedings of the 18th International AAAI Conference on Web and Social Media}
+}
 ```
